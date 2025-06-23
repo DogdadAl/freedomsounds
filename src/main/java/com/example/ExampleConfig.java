@@ -16,4 +16,14 @@ public interface ExampleConfig extends Config
 	{
 		return "Hello Albert and Parker";
 	}
+	
+	@ConfigItem(
+		keyName = "greeting2",
+		name = "Welcome Greeting2",
+		description = "The second message to show to the user when they login"
+	)
+	default String greeting()
+	{
+		return "2nd";
+	}
 }
